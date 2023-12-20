@@ -65,8 +65,8 @@ def main():
     base_url = "https://www.pasda.psu.edu/download/psu_opp/2017Orthophotos/LIDAR/DEM"
     wildcard_pattern = "227"  
     # edit these variables to the paths you want to use your computer
-    download_path = r'C:\Users\jao160\Documents\Teaching_PSU\Geog489_Sp1_24\Lesson 1\DownloadLidar'
-    unzippedLidarFolder = r'C:\Users\jao160\Documents\Teaching_PSU\Geog489_Sp1_24\Lesson 1\unzippedLidar'
+    download_path = r'C:\temp'
+    unzippedLidarFolder = r'C:\temp\unzipped'
     
     # make sure the folders exist
     for f in [download_path, unzippedLidarFolder]:
