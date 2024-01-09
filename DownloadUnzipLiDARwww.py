@@ -14,8 +14,8 @@ import zipfile
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
-from os.path import join, exists, basename, isdir
-
+from os.path import join, exists
+import os
 
 def unzip(zipFile, unzipLocation):
     zip_ref = zipfile.ZipFile(zipFile, 'r')
@@ -71,7 +71,7 @@ def main():
     # make sure the folders exist
     for f in [download_path, unzippedLidarFolder]:
         if not exists(f):
-            mkdir(f)
+            os.mkdir(f)
     
     download_files_with_wildcard(base_url, wildcard_pattern, download_path,unzippedLidarFolder)
 
